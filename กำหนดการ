@@ -1,0 +1,35 @@
+วันแรก
+เช้า
+0) ติดตั้งโปรแกรมระบบ Apache,Mysql,PHP  เครื่องมือ Composer,Git , Netbean , Navicat 
+1) ประวัติความเป็นมา, ติดตั้ง  Yii2  Project 
+   การทำ Requirement ,การปรับแต่ง php.ini ให้รองรับ
+2) การเขียน PHP แบบ Native
+3) Array ในภาษา PHP
+4) การปรับแต่ง Main Layout ของ Project
+5) การเขียนโปรแกรมแบบ MVC ด้วย Yii
+6) การติดตั้ง Module ระบบนำเข้า text file สำเร็จรูป
+7) Simple RBAC (Role Base Access Control)
+8) Complex SQL Query to  Gridview  and Excel Export
+9) Gridview Search by Pjax
+
+บ่าย
+10) การใช้งาน Gii
+11) การสร้าง Module
+12) การแจกและติดตั้ง Module คนอื่น
+
+
+วันที่สอง
+เช้า
+8) Complex SQL Query to  Gridview  and Excel Export ทบทวน
+9) Gridview Search by Pjax  ทบทวน
+13) การทำ Chart
+14) การทำ Map ด้วย Mapbox.js
+
+บ่าย
+
+15) Pretty Url
+16) Json และ RESTful Service (Yii or NodeJs)
+
+
+หมายเหตุ : จำลอง Error และการแก้ไข ระหว่างบรรยาย
+
