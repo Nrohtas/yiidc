@@ -1,4 +1,5 @@
 <?php
+\Yii::$app->db->open();
 
 /* @var $this yii\web\View */
 
