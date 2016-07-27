@@ -1,18 +1,34 @@
 <?php
 
+
+
+
 $number = [[1,2,3],[1,10,[1,'k']]];
 
-echo  $number[1][1];
-print_r($number[0]);
+echo  $number[1][1]; // 10
 
+/*  คอมเม้น  */
+echo "<hr>";
+echo $number[1][2][1]; //k
 
-//return;
-/*   */
+echo "<hr>";
+echo "<pre>";
+print_r($number); // แสดงทุก member
+echo "</pre>";
+
 echo "<hr>";
 
-$people = ["Peter"=>"35", "Ben"=>"37", "Joe"=>"43"];
-echo $people[2];
+$people = [
+    'Mr.A'=>35,
+    'Mr.B'=>40,
+    'Ms.C'=>23
+];
 
-$arr = array_keys($people);
-print_r($arr);
+echo "<pre>";
+print_r($people);
+echo "</pre>";
+
+echo "<hr>";
+echo $people['Mr.B'];
+
 
