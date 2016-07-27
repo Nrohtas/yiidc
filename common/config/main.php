@@ -23,6 +23,9 @@ return [
         'amcharts' => [
             'class' => 'frontend\modules\amcharts\Amcharts',
         ],
+        'plk00' => [
+            'class' => 'frontend\modules\plk00\Plk00',
+        ],
     ],
     'controllerMap' => [
         'file' => 'mdm\\upload\\FileController', // use to show or download file
