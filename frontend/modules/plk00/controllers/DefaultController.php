@@ -31,7 +31,10 @@ class DefaultController extends AppController
      
     public function actionReportSp(){
         
-        $sql = " select * from specialpp limit 100";
+        $sql = " SELECT h.hoscode,h.hosname,t.total FROM chospital_amp h LEFT JOIN 
+(SELECT  t.HOSPCODE,COUNT(t.HOSPCODE) total FROM specialpp t
+GROUP BY t.HOSPCODE ) t
+on t.HOSPCODE = h.hoscode ";
          $raw = \Yii::$app->db->createCommand($sql)->queryAll();
          $dataProvider = new ArrayDataProvider([
              'allModels'=>$raw
