@@ -1,12 +1,10 @@
 <?php
-$this->title = " รายงาน...... ";
-$this->params['breadcrumbs'][] = ['label'=>'รายงานของอำเภอ...','url'=>['index']];
-$this->params['breadcrumbs'][] = "รายงาน ....."
-
+$this->title = " รายงาน NCD ";
+$this->params['breadcrumbs'][] = ['label'=>'รายงานของอำเภอ...','url'=>['/plk00/default/index']];
+$this->params['breadcrumbs'][] = "รายงาน NCD"
 
 ?>
 
-<h3>รายงาน NCD</h3>
 
 <?php
 use kartik\grid\GridView;

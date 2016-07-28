@@ -27,6 +27,20 @@ class DefaultController extends AppController
              'dataProvider'=>$dataProvider
          ]);
      }// จบ action Report-Ncd
+     
+    public function actionReportSp(){
+        
+        $sql = " select * from specialpp ";
+         $raw = \Yii::$app->db->createCommand($sql)->queryAll();
+         $dataProvider = new ArrayDataProvider([
+             'allModels'=>$raw
+         ]);
+                 
+         return $this->render('report-sp',[
+             'dataProvider'=>$dataProvider
+         ]);
+        
+    }
     
     
 }
