@@ -16,6 +16,7 @@ class DefaultController extends AppController
     } // จบ action
     
      public function actionReportNcd(){
+         $this->permitRole([1,2,3]);
          
          $sql = " select * from service ";
          $raw = \Yii::$app->db->createCommand($sql)->queryAll();
