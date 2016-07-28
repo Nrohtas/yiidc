@@ -49,5 +49,21 @@ on t.HOSPCODE = h.hoscode ";
         
     }
     
+    public function actionSpIndiv($hoscode){
+        $this->permitRole([1,2,3]);
+        
+        $sql =" select * from  specialpp 
+                where hospcode = '$hoscode' ";
+        $raw = \Yii::$app->db->createCommand($sql)->queryAll();
+        
+        $dataProvider = new ArrayDataProvider([
+            'allModels'=>$raw
+        ]);
+        
+        return $this->render('sp-indiv',[
+            'dataProvider'=>$dataProvider
+        ]);
+    }
+    
     
 }
