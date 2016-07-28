@@ -5,11 +5,26 @@ $this->params['breadcrumbs'][] = "รายงาน Specialpp"
 
 ?>
 <div class="well">
+    ระหว่าง:
     <?php
     
         echo yii\jui\DatePicker::widget([
             'name' => 'date1',
-            'value' => $date1,
+            //'value' => $date1,
+            'language' => 'th',
+            'dateFormat' => 'yyyy-MM-dd',
+            'clientOptions' => [
+                'changeMonth' => true,
+                'changeYear' => true,
+            ]
+        ]);
+        ?>
+    ถึง:
+    <?php
+    
+        echo yii\jui\DatePicker::widget([
+            'name' => 'date2',
+            //'value' => $date1,
             'language' => 'th',
             'dateFormat' => 'yyyy-MM-dd',
             'clientOptions' => [

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e7a46921e519a6116c0703dd586970d4",
-    "content-hash": "616bfca4dd570df839a5cc0bdbf2f6c2",
+    "hash": "d53fb589b464055a392a3a46326b5d5a",
+    "content-hash": "70dbcfa3a0f4f38cde648b12241b86ed",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -539,6 +539,31 @@
             ]
         },
         {
+            "name": "bower-asset/jquery-ui",
+            "version": "1.11.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jqueryui.git",
+                "reference": "c34f8dbf3ba57b3784b93f26119f436c0e8288e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/c34f8dbf3ba57b3784b93f26119f436c0e8288e1",
+                "reference": "c34f8dbf3ba57b3784b93f26119f436c0e8288e1",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "jquery-ui.js"
+                ],
+                "bower-asset-ignore": []
+            }
+        },
+        {
             "name": "bower-asset/jquery.inputmask",
             "version": "3.2.7",
             "source": {
@@ -751,16 +776,16 @@
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
-            "version": "2.3.2",
+            "version": "2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-                "reference": "38a42688b836e256285765a7fd2f1cbe739d40d2"
+                "reference": "a1330f2f678d66d8ce2f8acb6fb9ce60a4614c60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/38a42688b836e256285765a7fd2f1cbe739d40d2",
-                "reference": "38a42688b836e256285765a7fd2f1cbe739d40d2",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/a1330f2f678d66d8ce2f8acb6fb9ce60a4614c60",
+                "reference": "a1330f2f678d66d8ce2f8acb6fb9ce60a4614c60",
                 "shasum": ""
             },
             "require": {
@@ -795,13 +820,19 @@
                     "email": "et.coder@gmail.com"
                 }
             ],
-            "description": "Backend theme for Yii2 Framework",
+            "description": "AdminLTE backend theme asset bundle for Yii 2.0 Framework",
             "keywords": [
                 "AdminLTE",
+                "admin",
+                "asset",
+                "backend",
+                "css",
                 "extension",
+                "less",
+                "theme",
                 "yii2"
             ],
-            "time": "2016-07-13 07:44:30"
+            "time": "2016-07-28 03:57:05"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -905,12 +936,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-grid.git",
-                "reference": "a47a8f735a71351eed3d57e4ec15faa6dea951b9"
+                "reference": "ca5a945787b15bbf7ee8f2d48e2491541861fe60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/a47a8f735a71351eed3d57e4ec15faa6dea951b9",
-                "reference": "a47a8f735a71351eed3d57e4ec15faa6dea951b9",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/ca5a945787b15bbf7ee8f2d48e2491541861fe60",
+                "reference": "ca5a945787b15bbf7ee8f2d48e2491541861fe60",
                 "shasum": ""
             },
             "require": {
@@ -947,7 +978,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2016-07-25 17:29:09"
+            "time": "2016-07-27 19:57:14"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -1581,6 +1612,56 @@
                 "yii2"
             ],
             "time": "2016-02-06 00:49:24"
+        },
+        {
+            "name": "yiisoft/yii2-jui",
+            "version": "2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-jui.git",
+                "reference": "843a2160cfe30f5c8b0cb2e9dbd8ee6bcf97e71d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/843a2160cfe30f5c8b0cb2e9dbd8ee6bcf97e71d",
+                "reference": "843a2160cfe30f5c8b0cb2e9dbd8ee6bcf97e71d",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery-ui": "1.11.*@stable",
+                "yiisoft/yii2": ">=2.0.4"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\jui\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com"
+                }
+            ],
+            "description": "The Jquery UI extension for the Yii framework",
+            "keywords": [
+                "jQuery UI",
+                "yii2"
+            ],
+            "time": "2016-07-22 22:26:59"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
