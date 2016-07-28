@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = "รายงาน Specialpp"
             ]
         ]);
         ?>
+    <button type="submit" class="btn btn-danger">ตกลง</button>
     
 </div>
 
