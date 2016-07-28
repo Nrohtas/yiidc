@@ -35,9 +35,12 @@ class DefaultController extends AppController
 (SELECT  t.HOSPCODE,COUNT(t.HOSPCODE) total FROM specialpp t
 GROUP BY t.HOSPCODE ) t
 on t.HOSPCODE = h.hoscode ";
+        
          $raw = \Yii::$app->db->createCommand($sql)->queryAll();
+                
+         
          $dataProvider = new ArrayDataProvider([
-             'allModels'=>$raw
+             'allModels'=>$raw,
          ]);
                  
          return $this->render('report-sp',[
