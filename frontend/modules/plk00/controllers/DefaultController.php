@@ -18,7 +18,7 @@ class DefaultController extends AppController
      public function actionReportNcd(){
          $this->permitRole([1,2,3]);
          
-         $sql = " select * from service ";
+         $sql = " select * from service limit 100 ";
          $raw = \Yii::$app->db->createCommand($sql)->queryAll();
          $dataProvider = new ArrayDataProvider([
              'allModels'=>$raw
@@ -31,7 +31,7 @@ class DefaultController extends AppController
      
     public function actionReportSp(){
         
-        $sql = " select * from specialpp ";
+        $sql = " select * from specialpp limit 100";
          $raw = \Yii::$app->db->createCommand($sql)->queryAll();
          $dataProvider = new ArrayDataProvider([
              'allModels'=>$raw
