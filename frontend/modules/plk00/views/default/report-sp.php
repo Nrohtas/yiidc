@@ -4,6 +4,22 @@ $this->params['breadcrumbs'][] = ['label'=>'รายงานของอำเ
 $this->params['breadcrumbs'][] = "รายงาน Specialpp"
 
 ?>
+<div class="well">
+    <?php
+    
+        echo yii\jui\DatePicker::widget([
+            'name' => 'date1',
+            'value' => $date1,
+            'language' => 'th',
+            'dateFormat' => 'yyyy-MM-dd',
+            'clientOptions' => [
+                'changeMonth' => true,
+                'changeYear' => true,
+            ]
+        ]);
+        ?>
+    
+</div>
 
 
 <?php
