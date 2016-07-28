@@ -26,7 +26,11 @@ echo GridView::widget([
         ],
         
         ['attribute'=>'total','label'=>'จำนวน']
-    ]
+    ],
+    'formatter' => [
+        'class' => 'yii\i18n\Formatter',
+        'nullDisplay' => '-'
+    ],
 ]);
 
 ?>

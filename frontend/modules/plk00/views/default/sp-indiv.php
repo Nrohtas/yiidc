@@ -10,7 +10,11 @@ $this->params['breadcrumbs'][] = "รายงาน NCD"
 use kartik\grid\GridView;
 echo GridView::widget([    
     'dataProvider'=>$dataProvider,
-    'panel'=>['before'=>'รายงาน......']
+    'panel'=>['before'=>'รายงาน......'],
+    'formatter' => [
+        'class' => 'yii\i18n\Formatter',
+        'nullDisplay' => '-'
+    ],
 ]);
 
 ?>
